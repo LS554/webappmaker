@@ -36,8 +36,8 @@ my ($arg1, $arg2) = @ARGV;
 #check if arguments is less than 2, if so skeleton or help
 if (@ARGV < 2) { 
     if ($arg1 eq "help") {
-        print "'webappmaker skeleton {folder}' to build skeleton\n";
-        print "'webappmaker {folder} {folder.war}' to compile to .war\n";
+        print "'wam skeleton {folder}' to build skeleton\n";
+        print "'wam {folder} {folder.war}' to compile to .war\n";
         exit;
     } else {
         if ($arg1 eq "skeleton") {
@@ -45,7 +45,7 @@ if (@ARGV < 2) {
         exit 1;
     }
         print "Invalid argument(s): @ARGV\n";
-        print "'webappmaker help' for help\n";
+        print "'wam help' for help\n";
         exit 1;
     }
 }
